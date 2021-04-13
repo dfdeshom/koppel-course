@@ -14,14 +14,20 @@ d = c + 1
 {d = 5, c = 4, b = 2}
 ```
 
+Since d = 5 and d = c+1, we have c=4
+Since c = 4 and c = 2b , b =2 
+Since b = 2 and b = 2 - a, a = 0
+
 # Exercise 3
 
 ```
 { x > 0}
 y = (x/2)  * 2
-{ x> 0; y = floor(x/2)}
+{(x is odd) => y=x-1 and (x is even) => y=x }
 z = x - y
-{ z - x - floor(x/2), y = floor(x/2), x > 0}
+{(x is odd) => z = x - (x-1) = -1 and (x is even) => z = x- x = 0  }
+a = 5z + (1-z)*12
+{(x is odd) => a = 5(-1) + (1- (-1))*12=5 and (x is even) => a = 5*(0) +(1-0)*12=12 }
 ```
 
 # Exercise 4
@@ -42,7 +48,7 @@ d = ...
   {a>=0 --> d = 0 & a <0 --> d = 1;
    d = 0 --> m = 3 ; d = 1 --> m = 2;
    x = 4b
-  }
+  }et
 - x = mx
   {a>=0 --> d = 0 & a <0 --> d = 1;
    d = 0 --> m = 3 & d = 1 --> m = 2;
